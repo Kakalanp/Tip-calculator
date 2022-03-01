@@ -30,6 +30,14 @@ h1 {
     color: var(--primary-text);
 }
 
+.input-bill {
+    background-image: url('./images/icon-dollar.svg');
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-origin: content-box;
+    padding: 0 20px;
+}
+
 h2 {
     color: var(--primary-text);
 }
@@ -62,6 +70,13 @@ input {
     
 }
 
+@supports(-webkit-appearance: none) {
+    input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+}
+
 button {
     background-color: var(--dark-primary);
     color: white;
@@ -90,12 +105,71 @@ button {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .data-wrapper {
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    padding: 10px;
     box-sizing: border-box;
     width: 375px;
+}
+
+.input-people {
+    background-image: url('./images/icon-person.svg');
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-origin: content-box;
+    padding: 0 20px;
+}
+
+.result-wrapper {
+    background-color: var(--dark-primary);
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    width: 375px;
+    padding: 30px;
+    box-sizing: border-box;
+    row-gap: 20px;
+    justify-content: space-between;
+}
+
+.result-txt > * {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    align-items: center;
+}
+
+.result-wrapper h2 {
+    color: white;
+    margin: 0;
+}
+
+.result-wrapper h3 {
+    color: var(--primary);
+    font-size: 3rem;
+    margin: 0;
+}
+
+.result-wrapper p {
+    color: var(--primary-text);
+    font-weight: bold;
+    margin: 0;
+}
+
+.result-wrapper button {
+    background-color: var(--primary);
+    color: var(--dark-primary);
+    text-align: center;
+    padding: 7px;
+}
+
+.attribution {
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
 }
