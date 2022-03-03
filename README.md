@@ -15,7 +15,7 @@
 
 ## Live page: 📄
 
-[Here]()
+[Here](https://kakalanp.github.io/Tip-calculator/dist)
 
 ## Authors: 👋
 
