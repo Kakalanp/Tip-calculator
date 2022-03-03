@@ -173,3 +173,22 @@ button {
     width: 100%;
     text-align: center;
 }
+
+input {
+    border: 2px solid transparent;
+}
+
+input:focus {
+    border: 2px solid var(--primary);
+    outline: none;
+    color: var(--dark-primary);
+}
+
+.btn-active {
+    background-color: var(--primary);
+    color: var(--dark-primary);
+}
+
+.input-invalid {
+    border: 2px solid orangered;
+}
