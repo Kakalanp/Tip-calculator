@@ -7,7 +7,7 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="./assets/favicon-32x32.png"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,18 +16,15 @@
       href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
-    <script src="./scripts.js" defer></script>
     <title>Frontend Mentor | Tip calculator app</title>
   </head>
   <body>
-    <header><img src="./images/logo.svg" alt="" /></header>
+    <header><img src="./assets/logo.svg" alt="" /></header>
 
     <div class="general-wrapper">
       <div class="data-wrapper">
         <h1>Bill</h1>
-        <label for=""><input class="input-bill" type="number" value="0" min="0" /></label>
-
+        <label for="input-bill"><input class="input-bill" id="input-bill" type="number" value="0" min="0" /></label>
         <h2>Select Tip %</h2>
         <ul>
           <li id="percentage-5">
@@ -54,7 +51,7 @@
           </li>
         </ul>
         <h2>Number of People</h2>
-        <label for=""><input class="input-people" type="number" value="1" min="1" /></label>
+        <label for="input-people"><input id="input-people" class="input-people" type="number" value="1" min="1" /></label>
       </div>
       <div class="result-wrapper">
         <div class="result-txt">
